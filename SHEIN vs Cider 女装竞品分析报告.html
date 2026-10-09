@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>SHEIN vs Cider 女装竞品分析报告</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6f5f2;--card:#fff;--tx:#1d1d1f;--mu:#6b6b70;--bd:#e4e2dc;--sh:#111;--cd:#c8553d;--ac:#2a5d9f}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141416;--card:#1e1e21;--tx:#f0efec;--mu:#9a9aa0;--bd:#303034;--sh:#e8e8e8;--cd:#e8765f;--ac:#6ba3e8}}
+:root[data-theme="dark"]{--bg:#141416;--card:#1e1e21;--tx:#f0efec;--mu:#9a9aa0;--bd:#303034;--sh:#e8e8e8;--cd:#e8765f;--ac:#6ba3e8}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif}
+.w{max-width:1040px;margin:0 auto;padding:20px 16px 60px}
+header{padding:28px 0 8px;border-bottom:2px solid var(--tx)}h1{font-size:28px;margin:0 0 6px;line-height:1.3}.sub{color:var(--mu);font-size:13px}
+h2{font-size:20px;margin:38px 0 6px;padding-left:10px;border-left:4px solid var(--cd)}h3{font-size:16px;margin:18px 0 6px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:16px;margin:12px 0}
+.g{display:grid;gap:12px}.g4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.k{font-size:26px;font-weight:700}.kl{font-size:12px;color:var(--mu)}.s{color:var(--sh)}.c{color:var(--cd)}
+.cv{position:relative;height:300px}.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.tabs button{border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:16px;padding:5px 14px;cursor:pointer;font-size:13px}.tabs button.on{background:var(--tx);color:var(--bg)}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{border-bottom:1px solid var(--bd);padding:8px 6px;text-align:left;vertical-align:top}th{color:var(--mu);font-weight:600}
+.tw{overflow-x:auto}.note{font-size:12px;color:var(--mu)}.tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;border:1px solid var(--bd);color:var(--mu);margin-right:4px}
+ul{padding-left:20px;margin:6px 0}li{margin:3px 0}.hl{background:rgba(200,85,61,.1);border-left:3px solid var(--cd);padding:10px 14px;border-radius:4px;margin:10px 0}.rw{display:flex;align-items:center;gap:10px;margin:6px 0}.rl{width:130px;font-size:12px;flex:none}.rb{flex:1}.bw{position:relative;height:9px;margin:2px 0;background:linear-gradient(var(--bd),var(--bd)) center/1px 100% no-repeat}.bz{position:absolute;top:0;height:100%;border-radius:2px}.bv{display:none}.lg{font-size:12px;margin-bottom:8px}.lg i{display:inline-block;width:12px;height:12px;margin:0 4px 0 10px;vertical-align:middle}.hr{display:flex;align-items:center;gap:6px;margin:2px 0}.hz{height:10px;border-radius:2px;min-width:2px}.hr span{font-size:11px;color:var(--mu)}.bt{position:absolute;top:-3px;font-size:10px;color:var(--mu)}.st{flex:1;display:flex;height:26px;border-radius:3px;overflow:hidden}.st div{color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center}.bv{display:none}
+</style></head><body><div class="w">
+<header><h1>SHEIN vs Cider 美国站女装竞品分析报告</h1><div class="sub">9 个类目(SHEIN 8 类、Cider 8 类)· 热销榜 × 新品榜 · 价格 / 款式 / 标题 / 履约 / 趋势 · 基于所提供的两份商品数据库(USD)</div></header>
+
+<h2>0 数据口径与数据质量(先看这里)</h2>
+<div class="card"><ul>
+<li><b>SHEIN</b>:us.shein.com 热销榜与新品榜,各 8 类 × 20 款 = 每榜 160 条。<b>它是平台多卖家榜单(热销榜 102 个店铺),不是单一品牌店</b>。含售价、划线价、折扣、快速发货、店铺代码、标题。</li>
+<li><b>Cider</b>:shopcider.com 单一品牌,仅含标题、价格、颜色数(仅热销榜)/ 发货标签(仅新品榜);Cider 无折扣字段。Cider 表含 Sets,无 Hoodies;SHEIN 反之。</li>
+<li>数据<b>没有销量、转化、评论</b>;SHEIN 库存字段全为 999(占位值)。"热销"= 榜单入选,结论是<b>上架属性层面的竞品对比</b>。所有数字均由原表计算;"判断/建议"已与数据分开标注。</li></ul></div>
+<div class="card" style="border-color:var(--cd)"><h3>⚠ 数据质量提示(已在分析中处理)</h3><ol>
+<li><b>SHEIN 新品榜有 77/160(48.1%)的商品与热销榜同名,但价格全部不一致</b>(同名 77 款:热销榜均价 $18.17,新品榜均价 $29.0)。两张表很可能在不同时间或价格状态下采集,<b>因此本报告不对 SHEIN 做"新品涨价"结论</b>;新品分析只使用不与热销榜重名的 83 款("新品去重")。</li>
+<li><b>Cider 新品榜 Jumpsuits 的 12 款与热销榜 Jumpsuits 前 12 款完全相同</b>,该类新品无独立信息,已排除;Sets 与 Knitwear 中另有 1 款重复,已去重。Cider 有效新品 77/90 款。</li>
+<li>Cider 热销榜同一商品在多个类目重复出现(212 条 → 200 款,其中 Bottoms 与 Denim 重名 9 款)。类目级图表按原榜单归类呈现,总体统计已去重。</li>
+<li>SHEIN 折扣:315/320 条折扣 > 0,另 5 条折扣为 0(并非全部在促销)。</li></ol>
+<div class="note">样本量:SHEIN 热销 160 / 新品去重 83;Cider 热销 200(去重)/ 新品 77;类目级新品每组仅 7–17 款,请视为方向性信号。</div></div>
+
+<h2>1 核心结论</h2>
+<div class="g g4">
+<div class="card"><div class="kl">热销榜均价 SHEIN / Cider</div><div class="k"><span class="s">$18.37</span> / <span class="c">$37.7</span></div><div class="kl">Cider 为 SHEIN 的 2.05 倍(同为热销榜口径)</div></div>
+<div class="card"><div class="kl">SHEIN 同款跨榜均价(数据提示)</div><div class="k">$18.17 → $29.0</div><div class="kl">77 款同名商品,在热销榜与新品榜价格不同</div></div>
+<div class="card"><div class="kl">标题平均长度(字符)</div><div class="k"><span class="s">123</span> / <span class="c">51</span></div><div class="kl">SHEIN 热销榜 / Cider 全部</div></div>
+<div class="card"><div class="kl">新品快速发货标签占比</div><div class="k"><span class="s">19.3%</span> / <span class="c">58.4%</span></div><div class="kl">SHEIN Quick Ship(新品去重)/ Cider Flash Shipping</div></div></div>
+<div class="hl"><b>一句话判断:</b>SHEIN 以"低价 + 场景词 + 多卖家铺量"抢流量,Cider 以"材质 + 版型 + 统一风格 + 更高客单"建品牌。SHEIN 的短板不在价格,而在<b>品牌一致性、标题质量、材质表达和履约时效</b>;新品端两家共同的方向信号是网纱(Mesh/Sheer:SHEIN 4%→11%,Cider 1%→9%)。</div>
+
+<h2>2 价格带对比</h2>
+<div class="g g2"><div class="card"><h3>各类目热销均价(USD)</h3><div id="c1"></div></div>
+<div class="card"><h3>价格带占比(各榜单内,%)</h3><div id="c2"></div></div></div>
+<div class="card"><b>读数:</b>SHEIN 热销款 42.5% 在 $15 以下、39.4% 在 $15–25,即 81.9% 在 $25 以下;Cider 热销款仅 22.0% 在 $25 以下,40.5% 在 $25–40、33.5% 在 $40–60。价格带重叠很小,<b>两家并非同一客群的直接价格战</b>。(SHEIN 新品榜价格口径见数据质量提示,价格带仅供参考。)</div>
+<h2>3 单类目竞品分析 · 新品 vs 热销</h2>
+<div class="sub">默认展示 Dresses(连衣裙,两家均有热销与新品数据);点击切换其他类目。</div>
+<div class="tabs" id="tabs"></div>
+<div class="g g2"><div class="card"><h3>均价:热销 vs 新品</h3><div id="c3"></div></div>
+<div class="card"><h3>标题关键词占比 Top(%)</h3><div id="c4"></div></div></div>
+<div class="card" id="ins"></div>
+
+<h2>4 新品 vs 热销:全类目风向</h2>
+<div class="card"><h3>关键词占比变化(新品 − 热销,百分点)</h3><div id="c5h"></div>
+<div class="note">Cider 有效新品仅 77 款、SHEIN 去重新品 83 款,解读为方向而非定论。</div></div>
+<div class="g g2"><div class="card"><h3>Cider 新品信号(有效新品 77 款 vs 热销 200 款)</h3><ul>
+<li><b>占比上升最多:</b>Puff/Bell/Lantern 8%→19%、Mesh/Sheer 1%→9%、Maxi 4%→12%、Asymmetric 5%→12%。</li><li><b>占比下降最多:</b>Mini 24%→16%、Cotton 15%→8%、Bow/Tie 11%→5%。</li>
+<li>有效新品中 58.4% 带 Flash Shipping;热销榜无该标签字段,无法对比。</li></ul></div>
+<div class="card"><h3>SHEIN 新品信号(去重新品 83 款 vs 热销 160 款)</h3><ul>
+<li><b>占比上升最多:</b>Mesh/Sheer 4%→11%、Bodycon/Fitted 23%→30%、Mini 12%→18%、Ruched 2%→6%。</li><li><b>占比下降最多:</b>Leopard/Animal 22%→8%、Faux 4%→0%、Cotton 1%→0%。</li>
+<li>去重新品 Quick Ship 19.3%,热销榜 18.1%。</li></ul></div></div>
+<div class="note">所有百分比 = 标题含该关键词的商品占比;关键词按整词匹配(例如 Mini 不会匹配 Minimalist)。</div>
+
+<h2>5 SHEIN 的不足(有数据支撑)</h2>
+<div class="card tw"><table><tr><th>维度</th><th>数据证据</th><th>影响</th></tr>
+<tr><td>品牌与风格一致性</td><td>热销榜 160 款来自 102 个店铺;最大店铺 12 款(7.5%)。</td><td>消费者看到的是"货架"而非"品牌",难以沉淀复购与溢价。</td></tr>
+<tr><td>标题质量</td><td>热销榜平均 123 字符(Cider 51);标题中大量堆砌场景词、季节词与节日词。</td><td>搜索覆盖广,但表达失焦、移动端易被截断。</td></tr>
+<tr><td>材质表达</td><td>热销标题含 Cotton 1%、Wool 0%;Cider 热销为 15% / 5%。</td><td>价格低又不讲材质,品质预期难以建立。</td></tr>
+<tr><td>折扣结构</td><td>315/320 条有折扣;折扣中位数 25%,中间半数集中在 22%–29%。</td><td>折扣深度高度集中,缺少分层,划线价的锚定作用被削弱。</td></tr>
+<tr><td>风格同质化</td><td>热销标题:Leopard/动物纹 22%、Sexy/Hot Girl 20%、Vintage 19%、Party/Club 24%、Y2K 13%;Cider 这些词均 ≤2%。</td><td>赛道拥挤,低价内卷风险高。</td></tr>
+<tr><td>履约时效标签</td><td>Quick Ship:热销榜 18.1%、去重新品 19.3%;Cider 有效新品 Flash Shipping 58.4%。</td><td>时效心智较弱(两家标签口径不同,仅作参考)。</td></tr></table></div>
+
+<h2>6 资深运营的市场判断</h2>
+<div class="note">以下为基于数据的专业判断。每条标明依据、置信度,以及"什么证据出现会让我改判"。</div>
+<div class="card"><h3>6.1 竞争格局:两家并非同一场仗</h3><div id="c6"></div>
+<div class="note">各类目 Cider 热销均价 ÷ SHEIN 热销均价(同为热销榜口径)。倍数越低,价格带越接近。</div><div id="mx" class="tw"></div></div>
+<div class="card tw"><table><tr><th>判断</th><th>依据(数据)</th><th>置信度</th><th>改判条件</th></tr>
+<tr><td><b>① 豹纹/动物纹已过高点</b></td><td>SHEIN 热销标题中 Leopard/动物纹 22%,去重新品降至 8%。</td><td>中</td><td>若自有数据中该类转化仍高于类目均值,可保留少量引流位。</td></tr>
+<tr><td><b>② SHEIN 价格类结论暂缓</b></td><td>77 款同名商品在两榜价格全部不同(均价 $18.17 vs $29.0)。</td><td>高(这是数据事实)</td><td>核实两张表的采集时间与价格状态后,再做定价策略。</td></tr>
+<tr><td><b>③ Cider 靠品牌与社交流量,不靠站内搜索词</b></td><td>Party/Club、Vacation、Sexy 在 Cider 标题中 0%,SHEIN 热销为 24% / 14% / 20%。</td><td>中低</td><td>需补充流量来源数据。<b>不要把 Cider 简洁标题直接照搬到 SHEIN</b>:平台搜索依赖关键词覆盖。</td></tr>
+<tr><td><b>④ 材质表达是低成本差异化点</b></td><td>SHEIN 热销 Cotton 1%、Wool 0%;Cider 15%、5%。</td><td>中</td><td>若面料词对点击/转化无增益(A/B 测试),则降级。</td></tr>
+<tr><td><b>⑤ 网纱是两家共同的新品方向</b></td><td>全类目:SHEIN 4%→11%,Cider 1%→9%;连衣裙:SHEIN 0%→20%,Cider 5%→45%。</td><td>低中(类目样本小)</td><td>下期榜单若网纱占比回落,则判为短期现象。</td></tr>
+<tr><td><b>⑥ 履约时效是新品的"入场券"</b></td><td>Cider 有效新品 Flash Shipping 58.4%;SHEIN 去重新品 Quick Ship 19.3%。</td><td>中低(标签口径不同)</td><td>需核对 Quick Ship 对转化的实际增益。</td></tr></table></div>
+
+<h2>7 运营方法论:遇到问题怎么办</h2>
+<h3>7.1 增长闭环(测款 → 放量 → 退出)</h3>
+<div class="card"><ol>
+<li><b>选品输入:</b>竞品热销榜(稳定元素)+ 新品榜(上升元素)+ 自有搜索词/加购数据,交叉得到候选款。</li>
+<li><b>小单测款:</b>每个风格假设用 2–3 款同主题测试;一次只改变一个变量(价格、主图或标题)。</li>
+<li><b>放量判断:</b>以"相对本类目自身基准"比较点击、加购、转化,而不是追绝对值;连续多日表现优于同类目中位数才放量。</li>
+<li><b>放量动作:</b>补深库存、争取快速发货、提高广告与站内资源,同步准备同款多色/多尺码延伸。</li>
+<li><b>退出:</b>测款期内无起量则停止追加,清库存并复盘假设(风格?价格?主图?标题?)。</li></ol></div>
+<h3>7.2 问题—诊断—动作手册</h3>
+<div class="card tw"><table><tr><th>典型问题</th><th>先看什么</th><th>诊断逻辑</th><th>处理动作</th></tr>
+<tr><td>曝光低</td><td>搜索词覆盖、类目选择、标题首 60 字符</td><td>类目挂错 / 核心词缺失 / 标题被截断</td><td>重排标题:核心品类+款式词前置;核对类目 ID;补材质/场景词(各 1–2 个)</td></tr>
+<tr><td>曝光有、点击低</td><td>主图、价格、标题</td><td>主图同质、价格无吸引力</td><td>对比竞品主图构图;测试不同主图首张;核对价格带是否落在榜单主区间</td></tr>
+<tr><td>点击高、转化低</td><td>详情页、尺码表、评价、运费/时效</td><td>预期与实物落差、尺码/面料不明、时效弱</td><td>补材质与弹力说明;完善尺码指引;争取快速发货;检查价格与划线价是否可信</td></tr>
+<tr><td>新品无起量</td><td>款式假设、定价、上架时机</td><td>款式踩中拥挤赛道,或价格偏离</td><td>对照第 4 节新品风向;降低试错成本,换款式假设而不是盲目降价</td></tr>
+<tr><td>爆款后断货/库存失衡</td><td>库存周转、尺码色号销售占比</td><td>补货节奏滞后、尺码结构不合理</td><td>按销售结构补货;设置安全库存;同风格延伸款分担需求</td></tr>
+<tr><td>同质化跟卖、价格战</td><td>竞品价格、同款数量、折扣频率</td><td>风格已拥挤,低价竞争无护城河</td><td>不跟价,转向材质、版型、套装或颜色差异化;收缩拥挤风格的投入</td></tr>
+<tr><td>退货率/差评升高</td><td>差评原因(尺码、色差、面料、做工)</td><td>标注与实物不一致</td><td>修正尺码表与图片色差;改面料描述;反馈生产端,必要时下架整改</td></tr>
+<tr><td>利润下滑、依赖折扣</td><td>折扣覆盖率、毛利、客单</td><td>全场折扣使划线价失效</td><td>分层折扣:引流款折扣、利润款保价、新品首发降低折扣</td></tr>
+<tr><td>节点错配(季节/节日)</td><td>竞品新品上架节奏、季节词占比</td><td>上新晚于竞品,或季节词与实物不符</td><td>提前一个周期备货;标题只保留与当季一致的季节词</td></tr></table></div>
+<h3>7.3 周度运营节奏</h3>
+<div class="card"><ul>
+<li><b>周一:</b>竞品榜单快照(价格带、关键词占比、新品占比),与本报告基线对比。</li>
+<li><b>周二至周三:</b>新品测款上架与标题/主图 A/B 调整。</li>
+<li><b>周四:</b>回看放量/淘汰名单,处理库存与补货。</li>
+<li><b>周五:</b>复盘本周问题清单(使用 7.2 手册归因),确定下周动作。</li></ul></div>
+<h3>7.4 30 / 60 / 90 天路线图</h3>
+<div class="card tw"><table><tr><th>阶段</th><th>目标</th><th>关键动作</th></tr>
+<tr><td>0–30 天</td><td>修基础</td><td>重写标题模板;补材质信息;梳理价格梯;建立竞品周监控</td></tr>
+<tr><td>31–60 天</td><td>验证假设</td><td>围绕判断 ④⑤⑥ 做小单测款;对比自有转化数据校准阈值</td></tr>
+<tr><td>61–90 天</td><td>放量与结构化</td><td>放大验证成功的款式;砍掉拥挤风格;沉淀品牌/系列化命名与视觉</td></tr></table></div>
+<div class="note">运营方法论为专业建议,非数据直接结论;阈值请以自有店铺数据校准。</div>
+</div>
+<script>
+const D={"cats": ["Tops", "Dresses", "Knitwear", "Bottoms", "Outerwear", "Denim", "Jumpsuits", "Hoodies", "Sets"], "st": {"Tops": [{"n": 20, "avg": 12.2, "med": 11.8}, {"n": 17, "avg": 21.13, "med": 18.61}, {"n": 12, "avg": 27.57, "med": 24.9}, {"n": 11, "avg": 34.17, "med": 34.9}], "Dresses": [{"n": 20, "avg": 19.26, "med": 19.24}, {"n": 15, "avg": 25.29, "med": 23.48}, {"n": 20, "avg": 40.55, "med": 39.9}, {"n": 11, "avg": 51.72, "med": 49.9}], "Knitwear": [{"n": 20, "avg": 15.8, "med": 16.34}, {"n": 8, "avg": 25.37, "med": 23.5}, {"n": 30, "avg": 34.85, "med": 35.92}, {"n": 11, "avg": 43.99, "med": 44.9}], "Bottoms": [{"n": 20, "avg": 14.98, "med": 16.34}, {"n": 8, "avg": 20.61, "med": 23.14}, {"n": 30, "avg": 31.43, "med": 27.42}, {"n": 11, "avg": 42.72, "med": 44.9}], "Outerwear": [{"n": 20, "avg": 30.44, "med": 33.19}, {"n": 7, "avg": 45.41, "med": 46.88}, {"n": 27, "avg": 54.21, "med": 59.9}, {"n": 11, "avg": 62.26, "med": 59.9}], "Denim": [{"n": 20, "avg": 23.89, "med": 23.49}, {"n": 11, "avg": 38.18, "med": 34.9}, {"n": 30, "avg": 40.89, "med": 43.12}, {"n": 11, "avg": 48.83, "med": 54.9}], "Jumpsuits": [{"n": 20, "avg": 14.99, "med": 14.18}, {"n": 10, "avg": 29.91, "med": 24.59}, {"n": 36, "avg": 34.07, "med": 34.74}, null], "Hoodies": [{"n": 20, "avg": 15.38, "med": 14.8}, {"n": 7, "avg": 23.06, "med": 23.48}, null, null], "Sets": [null, null, {"n": 27, "avg": 38.21, "med": 39.9}, {"n": 11, "avg": 51.54, "med": 49.9}]}, "kw": {"Tops": {"Ruched 抽褶": [5, 12, 42, 9], "Lace 蕾丝": [25, 12, 25, 0], "Off-shoulder 露肩": [0, 12, 8, 0], "Asymmetric 不对称": [5, 12, 25, 9], "Oversized 廓形": [0, 0, 17, 27], "Leopard/Animal 动物纹": [25, 6, 0, 0], "Plaid/Gingham 格纹": [10, 12, 17, 0], "Floral 花卉": [0, 12, 8, 36], "Mesh/Sheer 网纱": [5, 18, 0, 9], "Backless 露背": [5, 12, 0, 0], "Halter 挂脖": [10, 12, 8, 0], "Bodycon/Fitted 修身": [35, 41, 0, 0], "Corset 束身": [5, 6, 0, 0], "Bow/Tie 蝴蝶结": [5, 12, 25, 18], "Knit 针织": [10, 6, 0, 27], "Wool 羊毛": [0, 0, 0, 18], "Cotton 棉": [0, 0, 33, 27], "Velvet 丝绒": [0, 0, 0, 9], "Faux Fur 仿皮草": [0, 0, 0, 0], "Cut-out 镂空": [5, 0, 0, 0], "Puff/Bell/Lantern 袖型": [0, 6, 25, 36], "Sexy/Hot Girl": [35, 29, 0, 0], "Vintage/Retro 复古": [25, 29, 0, 0], "Party/Club 派对": [20, 18, 0, 0], "Vacation 度假": [20, 18, 0, 0], "Y2K": [10, 24, 0, 0], "Mini": [0, 0, 0, 0], "Midi": [0, 0, 0, 0], "Maxi": [0, 0, 0, 0], "Low Rise 低腰": [0, 0, 0, 0], "Wide Leg 阔腿": [0, 0, 0, 0]}, "Dresses": {"Ruched 抽褶": [10, 13, 25, 18], "Lace 蕾丝": [15, 27, 35, 27], "Off-shoulder 露肩": [20, 20, 0, 0], "Asymmetric 不对称": [15, 20, 0, 9], "Oversized 廓形": [0, 0, 10, 0], "Leopard/Animal 动物纹": [35, 13, 0, 0], "Plaid/Gingham 格纹": [5, 0, 10, 0], "Floral 花卉": [10, 7, 15, 18], "Mesh/Sheer 网纱": [0, 20, 5, 45], "Backless 露背": [15, 7, 10, 18], "Halter 挂脖": [10, 7, 10, 27], "Bodycon/Fitted 修身": [35, 47, 5, 18], "Corset 束身": [0, 0, 5, 9], "Bow/Tie 蝴蝶结": [10, 20, 0, 9], "Knit 针织": [5, 7, 0, 0], "Wool 羊毛": [0, 0, 0, 0], "Cotton 棉": [0, 0, 30, 0], "Velvet 丝绒": [0, 7, 0, 18], "Faux Fur 仿皮草": [5, 0, 0, 0], "Cut-out 镂空": [0, 7, 5, 18], "Puff/Bell/Lantern 袖型": [5, 7, 20, 18], "Sexy/Hot Girl": [35, 27, 0, 0], "Vintage/Retro 复古": [30, 27, 0, 0], "Party/Club 派对": [60, 53, 0, 0], "Vacation 度假": [25, 20, 0, 0], "Y2K": [5, 7, 0, 0], "Mini": [60, 60, 95, 45], "Midi": [0, 0, 5, 18], "Maxi": [5, 0, 0, 36], "Low Rise 低腰": [0, 0, 0, 0], "Wide Leg 阔腿": [0, 0, 0, 0]}, "Knitwear": {"Ruched 抽褶": [0, 0, 10, 0], "Lace 蕾丝": [0, 0, 0, 18], "Off-shoulder 露肩": [10, 0, 13, 9], "Asymmetric 不对称": [5, 12, 17, 0], "Oversized 廓形": [10, 12, 47, 64], "Leopard/Animal 动物纹": [0, 0, 7, 0], "Plaid/Gingham 格纹": [0, 0, 0, 0], "Floral 花卉": [5, 12, 0, 9], "Mesh/Sheer 网纱": [0, 12, 0, 0], "Backless 露背": [0, 0, 3, 0], "Halter 挂脖": [0, 0, 0, 9], "Bodycon/Fitted 修身": [10, 0, 0, 0], "Corset 束身": [0, 0, 0, 0], "Bow/Tie 蝴蝶结": [15, 0, 17, 0], "Knit 针织": [70, 75, 93, 100], "Wool 羊毛": [0, 12, 17, 36], "Cotton 棉": [0, 0, 0, 0], "Velvet 丝绒": [0, 0, 0, 0], "Faux Fur 仿皮草": [0, 0, 0, 9], "Cut-out 镂空": [0, 0, 0, 0], "Puff/Bell/Lantern 袖型": [15, 0, 0, 27], "Sexy/Hot Girl": [5, 0, 0, 0], "Vintage/Retro 复古": [5, 38, 0, 0], "Party/Club 派对": [5, 12, 0, 0], "Vacation 度假": [20, 25, 0, 0], "Y2K": [15, 25, 0, 0], "Mini": [0, 0, 7, 0], "Midi": [0, 0, 0, 0], "Maxi": [5, 0, 0, 0], "Low Rise 低腰": [0, 0, 3, 0], "Wide Leg 阔腿": [0, 0, 0, 0]}, "Bottoms": {"Ruched 抽褶": [5, 12, 7, 18], "Lace 蕾丝": [25, 12, 7, 9], "Off-shoulder 露肩": [0, 0, 0, 9], "Asymmetric 不对称": [10, 12, 3, 9], "Oversized 廓形": [0, 0, 0, 9], "Leopard/Animal 动物纹": [20, 12, 0, 0], "Plaid/Gingham 格纹": [15, 0, 3, 18], "Floral 花卉": [15, 0, 13, 0], "Mesh/Sheer 网纱": [5, 12, 0, 0], "Backless 露背": [0, 0, 0, 0], "Halter 挂脖": [0, 0, 0, 0], "Bodycon/Fitted 修身": [15, 25, 0, 9], "Corset 束身": [0, 0, 0, 0], "Bow/Tie 蝴蝶结": [0, 12, 7, 0], "Knit 针织": [0, 0, 0, 0], "Wool 羊毛": [0, 0, 0, 9], "Cotton 棉": [0, 0, 27, 0], "Velvet 丝绒": [0, 0, 0, 0], "Faux Fur 仿皮草": [5, 0, 0, 0], "Cut-out 镂空": [0, 0, 0, 0], "Puff/Bell/Lantern 袖型": [0, 0, 0, 0], "Sexy/Hot Girl": [25, 25, 0, 0], "Vintage/Retro 复古": [10, 0, 0, 0], "Party/Club 派对": [25, 25, 0, 0], "Vacation 度假": [15, 25, 0, 0], "Y2K": [30, 38, 0, 0], "Mini": [30, 38, 20, 27], "Midi": [5, 0, 0, 0], "Maxi": [0, 0, 3, 27], "Low Rise 低腰": [5, 0, 60, 27], "Wide Leg 阔腿": [10, 0, 23, 27]}, "Outerwear": {"Ruched 抽褶": [0, 0, 4, 0], "Lace 蕾丝": [0, 14, 0, 18], "Off-shoulder 露肩": [0, 0, 0, 0], "Asymmetric 不对称": [5, 0, 0, 18], "Oversized 廓形": [5, 14, 26, 27], "Leopard/Animal 动物纹": [10, 0, 7, 9], "Plaid/Gingham 格纹": [0, 0, 7, 0], "Floral 花卉": [0, 0, 0, 0], "Mesh/Sheer 网纱": [0, 0, 0, 0], "Backless 露背": [0, 0, 0, 0], "Halter 挂脖": [0, 0, 0, 0], "Bodycon/Fitted 修身": [25, 14, 0, 0], "Corset 束身": [0, 0, 0, 0], "Bow/Tie 蝴蝶结": [0, 0, 4, 0], "Knit 针织": [0, 14, 0, 0], "Wool 羊毛": [0, 14, 19, 9], "Cotton 棉": [0, 0, 4, 27], "Velvet 丝绒": [0, 0, 0, 0], "Faux Fur 仿皮草": [10, 0, 19, 27], "Cut-out 镂空": [0, 0, 0, 0], "Puff/Bell/Lantern 袖型": [5, 14, 19, 18], "Sexy/Hot Girl": [10, 29, 0, 0], "Vintage/Retro 复古": [20, 43, 0, 0], "Party/Club 派对": [30, 29, 0, 0], "Vacation 度假": [5, 14, 0, 0], "Y2K": [0, 0, 0, 0], "Mini": [0, 14, 0, 0], "Midi": [0, 0, 0, 0], "Maxi": [0, 0, 0, 0], "Low Rise 低腰": [0, 0, 0, 0], "Wide Leg 阔腿": [0, 0, 0, 0]}, "Denim": {"Ruched 抽褶": [0, 0, 3, 0], "Lace 蕾丝": [0, 0, 3, 0], "Off-shoulder 露肩": [0, 0, 0, 0], "Asymmetric 不对称": [0, 0, 0, 9], "Oversized 廓形": [0, 0, 10, 18], "Leopard/Animal 动物纹": [15, 9, 0, 0], "Plaid/Gingham 格纹": [0, 0, 0, 0], "Floral 花卉": [0, 9, 3, 0], "Mesh/Sheer 网纱": [0, 0, 0, 0], "Backless 露背": [0, 0, 0, 0], "Halter 挂脖": [0, 0, 0, 0], "Bodycon/Fitted 修身": [10, 18, 3, 0], "Corset 束身": [0, 9, 0, 0], "Bow/Tie 蝴蝶结": [0, 0, 7, 0], "Knit 针织": [0, 0, 0, 0], "Wool 羊毛": [0, 0, 0, 0], "Cotton 棉": [5, 0, 0, 0], "Velvet 丝绒": [0, 0, 0, 0], "Faux Fur 仿皮草": [5, 0, 0, 0], "Cut-out 镂空": [0, 0, 0, 0], "Puff/Bell/Lantern 袖型": [5, 9, 3, 0], "Sexy/Hot Girl": [5, 27, 0, 0], "Vintage/Retro 复古": [30, 18, 0, 0], "Party/Club 派对": [5, 9, 0, 0], "Vacation 度假": [5, 18, 0, 0], "Y2K": [10, 9, 0, 0], "Mini": [5, 18, 43, 9], "Midi": [0, 0, 0, 0], "Maxi": [0, 0, 3, 9], "Low Rise 低腰": [0, 0, 53, 36], "Wide Leg 阔腿": [40, 18, 17, 0]}, "Jumpsuits": {"Ruched 抽褶": [0, 0, 14, null], "Lace 蕾丝": [25, 20, 11, null], "Off-shoulder 露肩": [10, 0, 3, null], "Asymmetric 不对称": [0, 0, 0, null], "Oversized 廓形": [5, 0, 14, null], "Leopard/Animal 动物纹": [25, 10, 3, null], "Plaid/Gingham 格纹": [0, 0, 6, null], "Floral 花卉": [0, 0, 6, null], "Mesh/Sheer 网纱": [20, 10, 0, null], "Backless 露背": [10, 0, 11, null], "Halter 挂脖": [0, 0, 8, null], "Bodycon/Fitted 修身": [45, 50, 0, null], "Corset 束身": [0, 10, 0, null], "Bow/Tie 蝴蝶结": [5, 0, 8, null], "Knit 针织": [25, 20, 0, null], "Wool 羊毛": [0, 0, 0, null], "Cotton 棉": [0, 0, 14, null], "Velvet 丝绒": [5, 0, 3, null], "Faux Fur 仿皮草": [0, 0, 0, null], "Cut-out 镂空": [5, 0, 3, null], "Puff/Bell/Lantern 袖型": [5, 0, 3, null], "Sexy/Hot Girl": [45, 30, 0, null], "Vintage/Retro 复古": [5, 10, 0, null], "Party/Club 派对": [40, 20, 0, null], "Vacation 度假": [15, 10, 0, null], "Y2K": [10, 10, 0, null], "Mini": [0, 0, 0, null], "Midi": [0, 0, 0, null], "Maxi": [0, 0, 0, null], "Low Rise 低腰": [0, 0, 0, null], "Wide Leg 阔腿": [0, 30, 42, null]}, "Hoodies": {"Ruched 抽褶": [0, 0, null, null], "Lace 蕾丝": [0, 0, null, null], "Off-shoulder 露肩": [10, 0, null, null], "Asymmetric 不对称": [5, 14, null, null], "Oversized 廓形": [0, 0, null, null], "Leopard/Animal 动物纹": [45, 14, null, null], "Plaid/Gingham 格纹": [0, 14, null, null], "Floral 花卉": [0, 0, null, null], "Mesh/Sheer 网纱": [0, 0, null, null], "Backless 露背": [0, 0, null, null], "Halter 挂脖": [0, 0, null, null], "Bodycon/Fitted 修身": [10, 14, null, null], "Corset 束身": [0, 0, null, null], "Bow/Tie 蝴蝶结": [0, 0, null, null], "Knit 针织": [0, 14, null, null], "Wool 羊毛": [0, 0, null, null], "Cotton 棉": [0, 0, null, null], "Velvet 丝绒": [0, 0, null, null], "Faux Fur 仿皮草": [10, 0, null, null], "Cut-out 镂空": [0, 0, null, null], "Puff/Bell/Lantern 袖型": [0, 0, null, null], "Sexy/Hot Girl": [0, 14, null, null], "Vintage/Retro 复古": [25, 0, null, null], "Party/Club 派对": [10, 14, null, null], "Vacation 度假": [5, 0, null, null], "Y2K": [25, 0, null, null], "Mini": [0, 0, null, null], "Midi": [0, 0, null, null], "Maxi": [0, 0, null, null], "Low Rise 低腰": [0, 0, null, null], "Wide Leg 阔腿": [0, 0, null, null]}, "Sets": {"Ruched 抽褶": [null, null, 19, 27], "Lace 蕾丝": [null, null, 33, 27], "Off-shoulder 露肩": [null, null, 0, 0], "Asymmetric 不对称": [null, null, 7, 27], "Oversized 廓形": [null, null, 4, 0], "Leopard/Animal 动物纹": [null, null, 0, 0], "Plaid/Gingham 格纹": [null, null, 4, 9], "Floral 花卉": [null, null, 15, 9], "Mesh/Sheer 网纱": [null, null, 4, 9], "Backless 露背": [null, null, 0, 0], "Halter 挂脖": [null, null, 11, 0], "Bodycon/Fitted 修身": [null, null, 4, 9], "Corset 束身": [null, null, 0, 9], "Bow/Tie 蝴蝶结": [null, null, 22, 9], "Knit 针织": [null, null, 19, 9], "Wool 羊毛": [null, null, 4, 0], "Cotton 棉": [null, null, 22, 0], "Velvet 丝绒": [null, null, 0, 9], "Faux Fur 仿皮草": [null, null, 0, 0], "Cut-out 镂空": [null, null, 4, 0], "Puff/Bell/Lantern 袖型": [null, null, 4, 36], "Sexy/Hot Girl": [null, null, 0, 0], "Vintage/Retro 复古": [null, null, 0, 0], "Party/Club 派对": [null, null, 0, 0], "Vacation 度假": [null, null, 0, 0], "Y2K": [null, null, 0, 0], "Mini": [null, null, 33, 27], "Midi": [null, null, 4, 9], "Maxi": [null, null, 22, 9], "Low Rise 低腰": [null, null, 19, 18], "Wide Leg 阔腿": [null, null, 11, 36]}}, "kwAll": {"Ruched 抽褶": [2, 6, 14, 10], "Lace 蕾丝": [11, 12, 13, 14], "Off-shoulder 露肩": [6, 6, 3, 3], "Asymmetric 不对称": [6, 10, 5, 12], "Oversized 廓形": [2, 2, 17, 21], "Leopard/Animal 动物纹": [22, 8, 2, 1], "Plaid/Gingham 格纹": [4, 4, 5, 4], "Floral 花卉": [4, 6, 7, 10], "Mesh/Sheer 网纱": [4, 11, 1, 9], "Backless 露背": [4, 4, 4, 3], "Halter 挂脖": [2, 4, 4, 5], "Bodycon/Fitted 修身": [23, 30, 2, 5], "Corset 束身": [1, 4, 0, 3], "Bow/Tie 蝴蝶结": [4, 7, 11, 5], "Knit 针织": [14, 14, 16, 19], "Wool 羊毛": [0, 2, 5, 10], "Cotton 棉": [1, 0, 15, 8], "Velvet 丝绒": [1, 1, 0, 5], "Faux Fur 仿皮草": [4, 0, 2, 5], "Cut-out 镂空": [1, 1, 2, 3], "Puff/Bell/Lantern 袖型": [4, 5, 8, 19], "Sexy/Hot Girl": [20, 24, 0, 0], "Vintage/Retro 复古": [19, 22, 0, 0], "Party/Club 派对": [24, 24, 0, 0], "Vacation 度假": [14, 17, 0, 0], "Y2K": [13, 14, 0, 0], "Mini": [12, 18, 24, 16], "Midi": [1, 0, 1, 4], "Maxi": [1, 0, 4, 12], "Low Rise 低腰": [1, 0, 16, 12], "Wide Leg 阔腿": [6, 6, 14, 9]}, "stAll": [{"n": 160, "avg": 18.37, "med": 16.52}, {"n": 83, "avg": 27.77, "med": 24.08}, {"n": 200, "avg": 37.7, "med": 37.9}, {"n": 77, "avg": 47.89, "med": 47.9}], "bands": [[42.5, 39.4, 15.0, 3.1, 0.0], [9.6, 43.4, 32.5, 10.8, 3.6], [5.0, 17.0, 40.5, 33.5, 4.0], [1.3, 5.2, 24.7, 58.4, 10.4]], "T": {"n_sh": 320, "dup": 77, "dup_pct": 48.1, "dup_ph": 18.17, "dup_pn": 29.0, "dup_same": 0, "sh_new_true": 83, "cd_hot_rows": 212, "cd_hot_uni": 200, "cd_new_rows": 90, "cd_new_valid": 77, "stores_hot": 102, "top_store": 12, "top_store_pct": 7.5, "disc_pos": 315, "disc0": 5, "disc_med": 25.0, "disc_q1": 22.0, "disc_q3": 29.0, "disc_avg": 28.7, "tl_sh": 123, "tl_cd": 51, "q_hot": 18.1, "q_new": 19.3, "flash": 58.4, "bj_dup": 10, "bd_dup": 9}};
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const L=['SHEIN 热销','SHEIN 新品(去重)','Cider 热销','Cider 新品(有效)'];
+const SC=[['--sh',1],['--sh',.5],['--cd',1],['--cd',.5]];
+function hb(id,labels,series,u){u=u||'';const M=Math.max(1,...series.flatMap(s=>s.d.map(v=>v||0)));
+document.getElementById(id).innerHTML='<div class="lg">'+series.map(s=>'<i style="background:var('+s.c+');opacity:'+s.o+'"></i>'+s.n).join(' ')+'</div>'+labels.map((l,j)=>'<div class="rw"><div class="rl">'+l+'</div><div class="rb">'+series.map(s=>'<div class="hr"><div class="hz" style="width:'+(s.d[j]/M*100)+'%;background:var('+s.c+');opacity:'+s.o+'"></div><span>'+(u=='$'?'$':'')+s.d[j]+(u=='%'?'%':'')+'</span></div>').join('')+'</div></div>').join('')}
+function delta(){
+const d=Object.keys(D.kwAll).map(k=>({k,s:D.kwAll[k][1]-D.kwAll[k][0],c:D.kwAll[k][3]-D.kwAll[k][2]})).sort((a,b)=>Math.abs(b.s)+Math.abs(b.c)-Math.abs(a.s)-Math.abs(a.c)).slice(0,14);
+const M=Math.max(...d.map(x=>Math.max(Math.abs(x.s),Math.abs(x.c))));
+const bar=(v,cl)=>'<div class="bw"><div class="bz" style="'+(v>=0?'left:50%;':'right:50%;')+'width:'+Math.abs(v)/M*45+'%;background:var('+cl+')"></div><span class="bt" style="'+(v>=0?'left:'+(50+Math.abs(v)/M*45+1)+'%':'right:'+(50+Math.abs(v)/M*45+1)+'%')+'">'+(v>0?'+':'')+v+'</span></div>';
+document.getElementById('c5h').innerHTML='<div class="lg"><i style="background:var(--sh)"></i>SHEIN <i style="background:var(--cd)"></i>Cider <span class="note">向右=新品占比更高,向左=热销占比更高(百分点)</span></div>'+d.map(x=>'<div class="rw"><div class="rl">'+x.k+'</div><div class="rb">'+bar(x.s,'--sh')+bar(x.c,'--cd')+'</div></div>').join('')}
+function draw(){
+const C=D.cats,CB=C.filter(c=>D.st[c][0]&&D.st[c][2]);
+hb('c1',CB,[0,2].map(i=>({n:L[i],c:SC[i][0],o:1,d:CB.map(c=>D.st[c][i].avg)})),'$');
+const bl=['<$15','$15-25','$25-40','$40-60','$60+'],op=[.25,.45,.65,.85,1];
+document.getElementById('c2').innerHTML='<div class="lg">'+bl.map((b,j)=>'<i style="background:var(--ac);opacity:'+op[j]+'"></i>'+b).join(' ')+'</div>'+L.map((l,i)=>'<div class="rw"><div class="rl">'+l+'</div><div class="st">'+D.bands[i].map((v,j)=>v>0?'<div style="width:'+v+'%;background:var(--ac);opacity:'+op[j]+'" title="'+bl[j]+'">'+(v>=6?v+'%':'')+'</div>':'').join('')+'</div></div>').join('');
+const rt=C.filter(c=>D.st[c][0]&&D.st[c][2]).map(c=>({c,a:D.st[c][0].avg,b:D.st[c][2].avg,r:D.st[c][2].avg/D.st[c][0].avg}));
+hb('c6',rt.map(x=>x.c),[{n:'Cider ÷ SHEIN 热销均价(倍)',c:'--ac',o:1,d:rt.map(x=>+x.r.toFixed(2))}]);
+document.getElementById('mx').innerHTML='<table><tr><th>类目</th><th>SHEIN 热销均价</th><th>Cider 热销均价</th><th>价差倍数</th><th>规则化判断</th></tr>'+rt.map(x=>'<tr><td>'+x.c+'</td><td>$'+x.a+'</td><td>$'+x.b+'</td><td>'+x.r.toFixed(2)+'x</td><td>'+(x.r<1.9?'价格带较接近,靠款式与履约差异化':'价差大,存在品质升级款的价格空间')+'</td></tr>').join('')+'</table><div class="note">判断规则:价差倍数低于 1.9 视为"较接近"(本表内的相对划分,非行业标准)。</div>';
+show(cur)}
+let cur='Dresses';
+const TXT={Dresses:"<h3>Dresses 深度解读</h3><ul><li><b>样本:</b>SHEIN 热销 20 款 / 去重新品 15 款(另 5 款与热销榜同名,已排除);Cider 热销 20 款 / 新品 11 款。</li><li><b>热销榜均价:</b>SHEIN $19.26,Cider $40.55(约 2.11 倍)。</li><li><b>热销款画像:</b>SHEIN 以 Mini(60%)、Party/Club(60%)、Leopard(35%)、Sexy/Hot Girl(35%)、Bodycon/Fitted(35%)、Vintage(30%)为主;Cider 以 Mini(95%)、Lace(35%)、Cotton(30%)、Ruched(25%)为主,不使用场景词。</li><li><b>新品变化:</b>Cider Mesh 5%→45%、Maxi 0%→36%、Halter 10%→27%、Velvet 0%→18%,Mini 95%→45%;SHEIN Mesh 0%→20%、Bodycon/Fitted 35%→47%、Bow/Tie 10%→20%、Leopard 35%→13%。</li><li><b>判断:</b>SHEIN 的\"Mini + 派对\"仍是主流但竞争拥挤;Cider 新品在向长款与网纱、丝绒的派对裙移动,SHEIN 站内这类款尚未出现在榜单中(Maxi 新品 0%),是值得小单测试的方向。注意 Cider 连衣裙新品仅 11 款,结论为方向性。</li></ul>"};
+function show(c){cur=c;
+document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.textContent==c));
+const s=D.st[c],av=[0,1,2,3].filter(i=>s[i]),k=D.kw[c];
+const bs=['SHEIN','Cider'].filter((x,j)=>s[j*2]||s[j*2+1]),ls=['热销','新品'].map((x,j)=>j).filter(j=>bs.some(b=>s[(b=='SHEIN'?0:2)+j]));
+hb('c3',ls.map(j=>['热销','新品'][j]),bs.map(b=>({n:b,c:b=='SHEIN'?'--sh':'--cd',o:1,d:ls.map(j=>s[(b=='SHEIN'?0:2)+j].avg)})),'$');
+const ks=Object.keys(k).filter(x=>av.some(i=>k[x][i]>0)).sort((a,b)=>Math.max(...av.map(i=>k[b][i]||0))-Math.max(...av.map(i=>k[a][i]||0))).slice(0,10);
+hb('c4',ks,av.map(i=>({n:L[i],c:SC[i][0],o:SC[i][1],d:ks.map(x=>k[x][i]||0)})),'%');
+const f=v=>'$'+v.avg;
+document.getElementById('ins').innerHTML=(TXT[c]||'')+'<div class="tw"><table><tr><th>'+c+'</th>'+av.map(i=>'<th>'+L[i]+'</th>').join('')+'</tr><tr><td>样本数</td>'+av.map(i=>'<td>'+s[i].n+'</td>').join('')+'</tr><tr><td>均价</td>'+av.map(i=>'<td>'+f(s[i])+'</td>').join('')+'</tr><tr><td>中位价</td>'+av.map(i=>'<td>$'+s[i].med+'</td>').join('')+'</tr></table></div>'+(av.includes(1)?'<div class="note">SHEIN 新品价格口径见"数据口径"中的数据质量提示,不与热销榜价格做涨跌比较。</div>':'')+(c=='Sets'?'<div class="note">数据中仅 Cider 有 Sets 类,此类无 SHEIN 对照,故只展示 Cider。</div>':'')+(c=='Hoodies'?'<div class="note">数据中仅 SHEIN 有 Hoodies 类,此类无 Cider 对照,故只展示 SHEIN。</div>':'')}
+document.getElementById('tabs').innerHTML=D.cats.map(c=>'<button onclick="show(\''+c+'\')">'+c+'</button>').join('');
+delta();draw();
+</script></body></html>
